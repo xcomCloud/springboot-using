@@ -1,0 +1,41 @@
+server:
+  port: 8087
+spring:
+  ##redis配置
+  redis:
+    #写入
+    master:
+      database: 2
+      host: 47.47.47.47
+      port: 6379
+      timeout: 20000
+      password: pwd111
+      pool:
+        maxActive: 8
+        minIdle: 0
+        maxIdle: 8
+        maxWait: -1
+      #只读
+    lbs:
+      database: 0
+      host: 47.47.47.48
+      port: 8099
+      timeout: 20000
+      password: pwd111
+      pool:
+        maxActive: 8
+        minIdle: 0
+        maxIdle: 8
+        maxWait: -1
+
+logging:
+  #只有一个config时，按config配置文内容生成日志文件
+#  config: classpath:config/logback.xml
+
+  #只有一个path时，按path路径生成日志文件，默认名为spring.log
+#  path: springboot-redis-using/log/
+
+  #只有一个file时，file即为文件相对路径，按file生成日志文件
+  file: springboot-redis-using/log/redis-using.log
+  level:
+    root: info
