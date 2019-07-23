@@ -1,0 +1,18 @@
+##git ignore
+.idea
+README.md
+*.iml
+*.log
+
+### springboot-study
+springboot-study/logs
+springboot-study/target
+springboot-study/src/test
+
+### springboot-redis-using
+springboot-redis-using/logs
+springboot-redis-using/target
+springboot-redis-using/src/test
+
+
+

@@ -1,0 +1,8 @@
+server:
+  port: 8086
+##logging
+logging:
+  config: classpath:config/logback.xml
+  path: ./logs
+  level:
+    root: info
