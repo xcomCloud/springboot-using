@@ -1,6 +1,6 @@
 package com.xue.study.redis;
 
-import org.omg.PortableInterceptor.LOCATION_FORWARD;
+import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -43,5 +43,16 @@ public class RedisHelper {
      */
     public List<String> getListData(String key){
         return redisTempSlave.opsForList().range(key, 0, -1);
+    }
+
+    public JSONObject saveHash(){
+        JSONObject result = new JSONObject();
+
+//        redisTempMaster.opsForHash();
+//        redisTempMaster.boundHashOps("q").put("qq", "qqq");
+//        redisTempMaster.setHashKeySerializer()
+//        redisTempMaster.setHashValueSerializer();
+
+        return result;
     }
 }
