@@ -1,0 +1,18 @@
+server:
+  port: 8092
+#logging
+logging:
+  file: mongodb-using/logs/mongodb-using.log
+  level:
+    root: info
+#mongo
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mainfunc:mainfunc@47.105.191.177:27017/cloudTruck
+      database: cloudTruck
+  #
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB

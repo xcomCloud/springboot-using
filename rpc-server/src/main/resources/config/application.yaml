@@ -1,0 +1,6 @@
+server:
+  port: 8101
+logging:
+  file: rpc-server/logs/rpc-server.log
+  level:
+    root: info

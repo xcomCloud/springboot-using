@@ -1,0 +1,6 @@
+server:
+  port: 8095
+logging:
+  file: kafka-using/logs/kafka-using.log
+  level:
+    root: info

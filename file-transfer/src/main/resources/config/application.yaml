@@ -1,0 +1,6 @@
+server:
+  port: 8089
+logging:
+  file: file-transfer/logs/file-transfer.log
+  level:
+    root: info

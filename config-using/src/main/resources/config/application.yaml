@@ -1,0 +1,5 @@
+server:
+  port: 8096
+test:
+  name: xiaoming
+  name1: dahong
