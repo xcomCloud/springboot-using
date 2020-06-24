@@ -1,0 +1,8 @@
+server:
+  port: 8090
+
+##log
+logging:
+  file: websocket-server/logs/websocket-server.log
+  level:
+    root: info

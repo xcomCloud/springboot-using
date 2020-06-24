@@ -1,6 +1,5 @@
 package com.xue.study.config;
 
-import com.xue.study.redis.RedisHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.connection.RedisConnectionFactory;

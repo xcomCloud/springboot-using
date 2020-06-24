@@ -1,0 +1,26 @@
+server:
+  port: 8099
+logging:
+  file: redis-sentinel-using/logs/redis-sentinel-using.log
+  level:
+    root: info
+spring:
+  redis:
+#    host: xx #sentinel模式下不用配
+#    port: xx #sentinel模式下不用配
+    password: mainfunc
+    database: 1
+    timeout: 60000ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+    sentinel:
+      master: mymaster
+      nodes:
+        - 47.105.148.191:8094
+        - 47.105.148.191:8095
+        - 47.105.148.191:8096
+

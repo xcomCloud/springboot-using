@@ -1,6 +1,6 @@
 ##git ignore
 .idea
-README.md
+#README.md
 *.iml
 *.log
 
@@ -14,5 +14,65 @@ springboot-redis-using/logs
 springboot-redis-using/target
 springboot-redis-using/src/test
 
+### rabbitmq-using
+rabbitmq-using/logs
+rabbitmq-using/target
+rabbitmq-using/src/test
+
+### file-transfer
+file-transfer/logs
+file-transfer/target
+file-transfer/src/test
+
+### websocket-server
+websocket-server/logs
+websocket-server/target
+websocket-server/src/test
+
+### websocket-client
+websocket-client/logs
+websocket-client/target
+websocket-client/src/test
+
+### mongo-using
+mongodb-using/logs
+mongodb-using/target
+mongodb-using/src/test
+
+### aliyun-table-store
+aliyun-table-store/logs
+aliyun-table-store/target
+aliyun-table-store/src/test
+
+### mybatis-using
+mybatis-using/logs
+mybatis-using/target
+mybatis-using/src/test
+
+### kafka-using
+kafka-using/logs
+kafka-using/target
+kafka-using/src/test
+
+### config-using
+
+### aliyun-maxcompute
+
+### knife-using
+knife4j-using/logs
+knife4j-using/target
+knife4j-using/src/test
+
+### redis-sentinel-using
+redis-sentinel-using/logs
+redis-sentinel-using/target
+redis-sentinel-using/src/test
+
+### rpc-server
+rpc-server/logs
+rpc-server/target
+rpc-server/src/test
+
+### rpc-client
 
 

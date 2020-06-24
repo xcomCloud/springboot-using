@@ -1,0 +1,6 @@
+server:
+  port: 8093
+logging:
+  file: aliyun-table-store/logs/aliyun-table-store.log
+  level:
+    root: info

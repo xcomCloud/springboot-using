@@ -1,0 +1,6 @@
+server:
+  port: 8097
+logging:
+  file: aliyun-maxcompute/logs/aliyun-maxcompute.log
+  level:
+    root: info

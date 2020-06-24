@@ -1,0 +1,48 @@
+server:
+  port: 8088
+logging:
+  file: rabbitmq-using/logs/rabbitmq-using.log
+  level:
+    root: info
+spring:
+  ####amqp-rabbit
+  rabbitmq:
+    addresses: 47.105.195.242:5672, 47.105.191.177:5672, 47.105.148.191:5972
+    username: mainfunc
+    password: mainfunc
+    virtual-host: mf_dev
+    #不指定心跳超时
+    requested-heartbeat: 0
+    #连接超时
+    connection-timeout: 60000
+    #### producer
+    #发布确认
+    publisher-confirms: true
+    #返回确认
+    publisher-returns: true
+    #### consumer
+    listener:
+      direct:
+        acknowledge-mode: manual
+      simple:
+        #容器自动启动
+        auto-startup: true
+        #消费确认
+        acknowledge-mode: manual
+        #消费限制
+        concurrency: 1
+        max-concurrency: 5
+        #一次性消费限制
+        prefetch: 1
+        # 重试，失败则丢弃
+        retry:
+          max-attempts: 3
+          initial-interval: 3000ms
+        default-requeue-rejected: true
+    ##自定义业务队列
+    exchange:
+      msg-fault: msg.fault
+    routing-key:
+      fault-info: KFltInfo
+    queue:
+      fault-info: QFltInfo

@@ -1,0 +1,11 @@
+server:
+  port: 8098
+logging:
+  file: knife4j-using/logs/knife4j-using.log
+  level:
+    root: info
+
+#swagger:
+#  enable: true
+#knife4j:
+#  production: true
