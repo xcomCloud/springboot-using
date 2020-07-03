@@ -5,10 +5,10 @@ import com.alicloud.openservices.tablestore.model.AlwaysRetryStrategy;
 
 public class TSConfig {
 
-    public static final String TS_ENDPOINT = "https://ct-ori-msg-data.cn-hangzhou.ots.aliyuncs.com"; //实例访问地址即为endpoints
-    public static final String TS_ACCESSID = "LTAI4Fw6StHoE2kSFCPLsCdp";//id
-    public static final String TS_ACCESSKEY = "4xqYaKE2YH5Ga7nl2gt7UiaLYo6meM";//pwd
-    public static final String TS_INSTANCENAME = "ct-ori-msg-data";//实例
+    public static final String TS_ENDPOINT = "xxx"; //实例访问地址即为endpoints
+    public static final String TS_ACCESSID = "xxx";//id
+    public static final String TS_ACCESSKEY = "xxx";//pwd
+    public static final String TS_INSTANCENAME = "xxx";//实例
 
     private static ClientConfiguration clientConfiguration = null;
     public static ClientConfiguration getClientConfiguration(){
