@@ -76,3 +76,9 @@ rpc-server/src/test
 ### rpc-client
 
 
+###spring-cache-using
+spring-cache-using/logs
+spring-cache-using/target
+spring-cache-using/src/test
+
+

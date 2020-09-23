@@ -1,0 +1,6 @@
+server:
+  port: 8103
+logging:
+  file: spring-cache-using/logs/spring-cache-using.log
+  level:
+    root: info
