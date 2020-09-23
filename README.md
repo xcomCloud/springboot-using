@@ -58,3 +58,9 @@ port: 8101
 
 #rpc-client
 port: 8102
+
+#spring-cache-using
+port：8103
+
+#log4j-using
+port: 8104
